@@ -1,25 +1,27 @@
-# Logs
-logs
+# Top-level node_modules and logs (in case used globally)
+node_modules/
 *.log
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-pnpm-debug.log*
-lerna-debug.log*
-
-node_modules
-dist
-dist-ssr
 *.local
 
-# Editor directories and files
+# Ignore node_modules and build artifacts in any subdirectory
+**/node_modules/
+**/dist/
+**/dist-ssr/
+**/.DS_Store
+
+# Vite and Next.js specific
+**/.next/
+**/.vercel/
+
+# IDE/editor files (global)
 .vscode/*
 !.vscode/extensions.json
-.idea
-.DS_Store
+.idea/
 *.suo
 *.ntvs*
 *.njsproj
 *.sln
 *.sw?
+
+# Ignore top-level text files if needed
 *.txt
